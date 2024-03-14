@@ -11,6 +11,10 @@ namespace Sana09.Controllers
         public IActionResult SignIn()
         {
             return View();
+        } 
+        public IActionResult Profile()
+        {
+            return View();
         }
     }
 }

@@ -50,5 +50,6 @@ button.accept-policy {
 }
 
 .sign-in{
+    display:flex;
     margin-left:auto;
 }
