@@ -17,22 +17,21 @@ namespace Task1.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
-        {
-            return View();
-
-        } 
-        public IActionResult SignIn()
-        {
-            return View();
-        }
-
          public IActionResult Gym()
         {
             return View();
         }
+        public IActionResult Info()
+        {
+            return View();
+        }  
+        public IActionResult Trainers()
+        {
+            return View();
+        }
 
+   
+ 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
