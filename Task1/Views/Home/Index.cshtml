@@ -1,8 +1,57 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿
+    <style>
+        .body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Come to our gym --></p>
+        .index-header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .hero {
+            color: #444;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+    </style>
+
+
+<div class="body">
+    <header class="index-header">
+        <h1>Welcome to My Gym</h1>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Your Fitness Journey Starts Here</h1>
+            <p>Join us now and achieve your fitness goals!</p>
+        </div>
+    </section>
 </div>
+
+</html>
