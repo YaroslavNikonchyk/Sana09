@@ -1,0 +1,180 @@
+﻿ <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  width: 700px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: linear-gradient(to right bottom, #e9ecef, #adb5bd);
+  background-size: 100%;
+  font-family: sans-serif;
+  margin: 0 auto;
+  margin-top: 10%;
+  color: #333;
+  border-radius: 9px;
+  box-shadow: 0 15px 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bolder;
+}
+
+a {
+  color: #868e96;
+  text-decoration: none;
+}
+
+.form-container {
+  padding: 36px 24px;
+  background-color: #dee2e6;
+  border-radius: 9px 0 0 9px;
+}
+
+img {
+  height: 100%;
+
+}
+
+.img-container {
+  overflow: hidden;
+  border-radius: 0 9px 9px 0;
+  position: relative;
+  background-size: cover;
+}
+
+.img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.2)
+  );
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 6px;
+}
+
+h2 span {
+  color: #555;
+}
+
+.span-border {
+  width: 50%;
+  margin: 24px auto 18px;
+  display: flex;
+  border-radius: 15px;
+  border-top: 8px solid #adb5bd;
+}
+
+.input {
+  margin-bottom: 16px;
+  width: 85%;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid #adb5bd;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+.button {
+  cursor: pointer;
+  font-size: 18px;
+  width: 50%;
+  height: 45px;
+  background-color: #495057;
+  color: #f8f9fa;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #5a636c;
+}
+
+.show-password {
+  margin-top: -12px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.submit {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.submit div {
+  font-size: 12px;
+}
+
+.submit div span {
+  display: block;
+}
+</style>
+<div class="body">
+    <div class="form-container">
+      <form>
+        <h2>Sign Up Today</h2>
+        <span>First mounth in gym for free!</span>
+        <span class="span-border"> </span>
+        <div>
+          <label for="name">What's your name?</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="Yaroslav"
+            required
+            class="input"
+          />
+        </div>
+        <div>
+          <label for="email">Where can we email you?</label>
+          <input
+            type="text"
+            name="email"
+            placeholder="example@example.com"
+            required
+            class="input"
+          />
+        </div>
+        <div>
+          <label for="password">Pick a password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Your password"
+            required
+            class="input"
+          />
+        </div>
+        <label class="show-password"
+          ><input type="checkbox" /> Show password</label
+        >
+        <div class="submit">
+          <input type="submit" value="Sign up" class="button" />
+          <div>
+            <span>Have an account?</span>
+            <a href="#">Log in now!</a>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="img-container">
+      <img src="https://3.bp.blogspot.com/-_FAfCuHVPIo/UCMF-Y4pdZI/AAAAAAAAAFE/xajKda-2b2E/s1600/arnold+(15).jpg" alt="arnold" />
+    </div>
+</div>
